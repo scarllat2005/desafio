@@ -1,9 +1,20 @@
-const alunos = [ "João", "Juliana", "Ana", "Caio"];
+const alunos = ["João", "Juliana", "ana" , "caio"];
 const medias = [10, 8, 7.5, 9];
 
-const ListaDeAlunosEMedias = [alunos,medias]
+const ListaDeAlunosEMedidas = [alunos, medias];
 
-console.log(                               
-   `A aluna da posição 1 da lista de alunos é:${ListaDeAlunosEMedias[0][1]}`
-   `A nota dessa aluna é ${ListaDeAlunosEMedias[1][1]}`
-);
+function exibeNomeeNota(alunos){
+    if (ListaDeAlunosEMedidas[0].includes(aluno)){
+        
+        console.log(`${aluno} está cadastrado!`)
+
+        const indice =  ListaDeAlunosEMedidas[0].indexOf(aluno);
+
+        const mediaAluno = ListaDeAlunosEMedidas[1][indice];
+
+        console.log(`${aluno} tem a media ${mediaAluno}`)
+
+    }else {
+      console.log("Aluno(a) não encontrado!")
+    }
+}
